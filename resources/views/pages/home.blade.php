@@ -1,117 +1,72 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layouts.app')
 
-    <title>Bootstrap 3, from LayoutIt!</title>
+@section('title','Home')
 
-    <meta name="description" content="Source code generated using layoutit.com">
-    <meta name="author" content="LayoutIt!">
+@section('styles')
+	<link href="{{ asset('css/home.css')}}" rel="stylesheet">
+@stop
 
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-
-  </head>
-  <body>
-
-    <div class="container-fluid">
-	<div class="row">
-		<div class="col-md-12">
-			<nav class="navbar navbar-default" role="navigation">
-				<div class="navbar-header">
-					 
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-						 <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-					</button> <a class="navbar-brand" href="#">Brand</a>
+@section('content')
+	<div class="row" style="margin-top: 100px;">
+		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+			<div class="jumbotron jumbotron-fluid midete">
+				<div class="container">
+					<h2>
+						Mídete <i class="fa fa-beer" aria-hidden="true"></i>
+					</h2>
+					<hr>
+					<p>
+						<b>RELAJATE, CONTROLA TUS EMOCIONES</b>
+					</p>
+					<a href="{{ route('get-midete') }}">
+						<button type="button" class="btn btn-warning btnmidete">Entrar</button>
+					</a>
 				</div>
-				
-				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-					<ul class="nav navbar-nav">
-						<li class="active">
-							<a href="#">Link</a>
-						</li>
-						<li>
-							<a href="#">Link</a>
-						</li>
-						<li class="dropdown">
-							 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown<strong class="caret"></strong></a>
-							<ul class="dropdown-menu">
-								<li>
-									<a href="#">Action</a>
-								</li>
-								<li>
-									<a href="#">Another action</a>
-								</li>
-								<li>
-									<a href="#">Something else here</a>
-								</li>
-								<li class="divider">
-								</li>
-								<li>
-									<a href="#">Separated link</a>
-								</li>
-								<li class="divider">
-								</li>
-								<li>
-									<a href="#">One more separated link</a>
-								</li>
-							</ul>
-						</li>
-					</ul>
-					<form class="navbar-form navbar-left" role="search">
-						<div class="form-group">
-							<input type="text" class="form-control">
-						</div> 
-						<button type="submit" class="btn btn-default">
-							Submit
-						</button>
-					</form>
-					<ul class="nav navbar-nav navbar-right">
-						<li>
-							<a href="#">Link</a>
-						</li>
-						<li class="dropdown">
-							 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown<strong class="caret"></strong></a>
-							<ul class="dropdown-menu">
-								<li>
-									<a href="#">Action</a>
-								</li>
-								<li>
-									<a href="#">Another action</a>
-								</li>
-								<li>
-									<a href="#">Something else here</a>
-								</li>
-								<li class="divider">
-								</li>
-								<li>
-									<a href="#">Separated link</a>
-								</li>
-							</ul>
-						</li>
-					</ul>
+			</div>
+		</div>
+		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+			<div class="jumbotron jumbotron-fluid noteabras">
+				<div class="container">
+					<h2>
+						No te Abras <i class="fa fa-slideshare" aria-hidden="true"></i>
+					</h2>
+					<hr>
+					<p>
+						<b>INTEGRATE, NO TE APARTES</b>
+					</p>
+					<button type="button" class="btn btn-warning btnnoteabras">Entrar</button>
 				</div>
-				
-			</nav>
-			<div class="jumbotron">
-				<h2>
-					Hello, world!
-				</h2>
-				<p>
-					This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.
-				</p>
-				<p>
-					<a class="btn btn-primary btn-large" href="#">Learn more</a>
-				</p>
 			</div>
 		</div>
 	</div>
-</div>
-
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/scripts.js"></script>
-  </body>
-</html>
+	<div class="row">
+		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+			<div class="jumbotron jumbotron-fluid conmigo">
+				<div class="container">
+					<h2>
+						¿Qué onda conmigo? <i class="fa fa-smile-o" aria-hidden="true"></i>
+					</h2>
+					<hr>
+					<p>
+						<b>TENGO PROBLEMAS, ¿QUÉ HAGO?</b>
+					</p>
+					<button type="button" class="btn btn-warning btnconmigo">Entrar</button>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+			<div class="jumbotron jumbotron-fluid losdemas">
+				<div class="container">
+					<h2>
+						¿Qué onda con los demas? <i class="fa fa-users" aria-hidden="true"></i>
+					</h2>
+					<hr>
+					<p>
+						<b>A NADIE LE GUSTA LA VIOLENCIA</b>
+					</p>
+					<button type="button" class="btn btn-warning btnlosdemas">Entrar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+@stop

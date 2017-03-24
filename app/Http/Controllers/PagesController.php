@@ -9,4 +9,9 @@ class PagesController extends Controller
 	{
 		return view('pages.home');
 	}
+	Public function getMidete()
+	{
+		dd('puto');
+		return view('pages.test1');
+	}
 }

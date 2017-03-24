@@ -12,3 +12,8 @@
 */
 
 Route::get('/', 'PagesController@getHome');
+Route::get('test', 'PagesController@getMidete')->name('get-midete');
+Route::get('pendejo', function()
+{
+	echo 'asdfasdfa';
+});

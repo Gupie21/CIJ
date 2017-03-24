@@ -1,0 +1,36 @@
+.midete{
+	background-color: #52CD61;
+	color: #FFFFFF;
+}
+.noteabras{
+	background-color: #61EBE6;
+	color: #FFFFFF;
+}
+.conmigo{
+	background-color: #FFAC6A;
+	color: #FFFFFF;
+}
+.losdemas{
+	background-color: #FF716A;
+	color: #FFFFFF;
+}
+.btnmidete
+{
+	background-color: #52CD61;
+	border:none;
+}
+.btnnoteabras
+{
+	background-color: #00D0C8;
+	border:none;
+}
+.btnconmigo
+{
+	background-color: #CE966A;
+	border:none;
+}
+.btnlosdemas
+{
+	background-color: #CE6F6A;
+	border:none;
+}
